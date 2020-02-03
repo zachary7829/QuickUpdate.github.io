@@ -78,7 +78,7 @@
 										<key>attachmentsByRange</key>
 										<dict/>
 										<key>string</key>
-										<string>3.2</string>
+										<string>3.2.0.1</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -442,7 +442,27 @@
 				<key>WFCondition</key>
 				<integer>5</integer>
 				<key>WFConditionalActionString</key>
-				<string>Skip</string>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Contents of URL</string>
+								<key>OutputUUID</key>
+								<string>6DC28FE7-BE88-46B6-B2FB-504BE52248A8</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string></string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
 				<key>WFControlFlowMode</key>
 				<integer>0</integer>
 				<key>WFInput</key>
@@ -596,27 +616,6 @@
 				<false/>
 				<key>WFWorkflowName</key>
 				<string>QuickUpdate</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.exit</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>WFResult</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Shortcut Result</string>
-						<key>OutputUUID</key>
-						<string>EEC7562B-0271-4642-BD3F-4251AD1334C0</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
 			</dict>
 		</dict>
 		<dict>
@@ -866,10 +865,12 @@ END:VCARD</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.openurl</string>
+			<string>is.workflow.actions.url</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>WFInput</key>
+				<key>UUID</key>
+				<string>407513C3-C22E-4337-A9C9-ECF9C9A7F070</string>
+				<key>WFURLActionURL</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -899,6 +900,27 @@ END:VCARD</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>URL</string>
+						<key>OutputUUID</key>
+						<string>407513C3-C22E-4337-A9C9-ECF9C9A7F070</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -989,17 +1011,6 @@ END:VCARD</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>AB6CC1C8-4A6D-42C1-AB6C-C1C84A6D02C1</string>
-				<key>WFTextActionText</key>
-				<string>Skip</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.documentpicker.save</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -1061,9 +1072,9 @@ END:VCARD</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Contents of URL</string>
 						<key>OutputUUID</key>
-						<string>AB6CC1C8-4A6D-42C1-AB6C-C1C84A6D02C1</string>
+						<string>6DC28FE7-BE88-46B6-B2FB-504BE52248A8</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1283,7 +1294,27 @@ END:VCARD</string>
 				<key>WFCondition</key>
 				<integer>5</integer>
 				<key>WFConditionalActionString</key>
-				<string>Skip</string>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Contents of URL</string>
+								<key>OutputUUID</key>
+								<string>64BB42D5-8D2C-4650-ADC9-0BF8E060032B</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string></string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
 				<key>WFControlFlowMode</key>
 				<integer>0</integer>
 				<key>WFInput</key>
@@ -1531,7 +1562,6 @@ END:VCARD</string>
 				<key>WFTextActionText</key>
 				<string>BEGIN:VCARD
 N:Download Update
-ORG:https://routinehub.co/shortcut/2647
 PHOTO;ENCODING=b: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
 END:VCARDBEGIN:VCARD
 N:Update Later
@@ -1576,6 +1606,28 @@ END:VCARD</string>
 			<dict>
 				<key>UUID</key>
 				<string>C541F826-A660-439E-AAA1-187E23B58C10</string>
+				<key>WFChooseFromListActionPrompt</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{7, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Contents of URL</string>
+								<key>OutputUUID</key>
+								<string>64BB42D5-8D2C-4650-ADC9-0BF8E060032B</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>3.2 ➡️ </string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -1846,10 +1898,12 @@ END:VCARD</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.openurl</string>
+			<string>is.workflow.actions.url</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>WFInput</key>
+				<key>UUID</key>
+				<string>5E899446-E553-4AE9-A11B-ECB5AAC8E09B</string>
+				<key>WFURLActionURL</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -1870,6 +1924,27 @@ END:VCARD</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openurl</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>URL</string>
+						<key>OutputUUID</key>
+						<string>5E899446-E553-4AE9-A11B-ECB5AAC8E09B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
 				</dict>
 			</dict>
 		</dict>
@@ -1958,17 +2033,6 @@ END:VCARD</string>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>4CBD6135-448D-433D-A137-C8B4E55EFE5E</string>
-				<key>WFTextActionText</key>
-				<string>Skip</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.documentpicker.save</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -2028,9 +2092,9 @@ END:VCARD</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Contents of URL</string>
 						<key>OutputUUID</key>
-						<string>4CBD6135-448D-433D-A137-C8B4E55EFE5E</string>
+						<string>64BB42D5-8D2C-4650-ADC9-0BF8E060032B</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
