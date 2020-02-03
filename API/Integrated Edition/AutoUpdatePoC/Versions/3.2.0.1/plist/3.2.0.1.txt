@@ -1205,7 +1205,7 @@ END:VCARD</string>
 				<key>WFCondition</key>
 				<integer>5</integer>
 				<key>WFConditionalActionString</key>
-				<string>03.2</string>
+				<string>03.2.0.1</string>
 				<key>WFControlFlowMode</key>
 				<integer>0</integer>
 				<key>WFInput</key>
@@ -1643,7 +1643,7 @@ END:VCARD</string>
 				<key>UUID</key>
 				<string>38BAD7A1-BE61-4D0F-A81F-ABE2A183AD39</string>
 				<key>WFURL</key>
-				<string>https://raw.githubusercontent.com/zachary7829/QuickUpdate.github.io/master/API/Integrated%20Edition/AutoUpdatePoC/Versions/3.2/plist/3.2.txt</string>
+				<string>https://raw.githubusercontent.com/zachary7829/QuickUpdate.github.io/master/API/Integrated%20Edition/AutoUpdatePoC/Versions/3.2.0.1/plist/3.2.0.1.txt</string>
 			</dict>
 		</dict>
 		<dict>
